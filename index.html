@@ -9,11 +9,21 @@
     <style type="text/css">
         pre { margin: 0; }
         .centered { width: 500px; margin: 0 auto 0 auto; }
-        h1 { text-align: center; }
+        h1 {
+            text-align: center;
+        }
         body {
             color: white;
             background-color: #222;
         }
+        iframe {
+            display: none;
+        }
+        .absolute {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
     </style>
     <script type="text/javascript">
         $(function () {
@@ -22,9 +32,19 @@
                 loadingHtml: ''
             });
         });
+        function buttonClick() {
+            alert('Hologram will be available only in year 2035.');
+        }
     </script>
 </head>
 <body>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wdZNCzo4Vwk?controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<h1>Lucci Gang Brad FOREVA</h1>
+<div class="absolute">
+    <button onclick="buttonClick()">
+        Generate Hologram
+    </button>
+</div>
 <div id="render-container" class="centered">
         <pre id="tree-container"></pre>
     <a href="gifts.html"></a>
